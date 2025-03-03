@@ -3,11 +3,12 @@ import doctorImg from "../assets/Image/Doctor.png";
 
 const Image = () => {
   return (
-    <div className="hidden md:flex lg:flex w-1/2 h-full">
+    <div className="hidden lg:flex w-1/2 h-full">
+      {/* Image */}
       <img
         src={doctorImg}
         alt="Doctor Image"
-        className="w-full h-full object-cover"
+        className="w-full md:max-w-xl lg:max-w-2xl xl:max-w-3xl"
       />
     </div>
   );

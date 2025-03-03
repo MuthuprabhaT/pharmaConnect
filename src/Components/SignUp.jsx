@@ -4,11 +4,11 @@ import gmail from "../assets/Image/gmail.svg";
 
 const SignUp = () => {
   return (
-    <div className="w-full md:w-1/2 lg:w-1/2 flex flex-col bg-gray-100 relative">
-      {/* Main Content (Scrollable) */}
-      <div className="flex-grow flex flex-col justify-center items-center px-10 overflow-auto">
+    <div className="w-full lg:w-1/2 flex flex-col bg-gray-100 relative">
+      {/* Main Content */}
+      <div className="flex flex-col justify-center items-center m-auto px-10 overflow-auto">
         <div className="max-w-md w-full">
-          <h1 className="text-4xl font-bold text-center mb-10 bg-gradient-to-b from-teal-800 via-teal-600 to-sky-400 text-transparent  bg-clip-text">
+          <h1 className="text-3xl sm:text-4xl font-bold text-center mb-10 bg-gradient-to-b from-teal-800 via-teal-600 to-sky-400 text-transparent  bg-clip-text">
             PharmaConnect
           </h1>
           <h1 className="font-bold text-2xl text-center mb-2">
@@ -18,12 +18,12 @@ const SignUp = () => {
             Sign-up to create your account
           </p>
 
-          {/* Input Field */}
+          {/* Email Input Field */}
           <label className="block mb-2 text-gray-700 font-semibold">
             Enter Email/Phone Number
           </label>
           <input
-            type="text"
+            type="email"
             placeholder="abc@gmail.com"
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
           />
@@ -48,7 +48,7 @@ const SignUp = () => {
             Sign Up
           </button>
 
-          {/* Divider */}
+          {/* Divider for Social Sign-Up */}
           <div className="flex items-center my-4">
             <div className="flex-grow h-px bg-gray-300"></div>
             <p className="mx-2 text-gray-500">or Sign Up with</p>
@@ -75,7 +75,7 @@ const SignUp = () => {
         </div>
       </div>
 
-      {/* Footer at the Bottom, Same as Image */}
+      {/* Footer at the Bottom  */}
       <footer className="absolute bottom-0 w-full bg-white py-3 text-center text-gray-600 text-sm">
         Powered by Hutech Solutions
       </footer>
